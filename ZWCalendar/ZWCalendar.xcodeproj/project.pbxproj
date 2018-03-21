@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		187090442060D8C300431013 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187090432060D8C300431013 /* AppDelegate.m */; };
+		1870904A2060D8C300431013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187090482060D8C300431013 /* Main.storyboard */; };
+		1870904C2060D8C300431013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1870904B2060D8C300431013 /* Assets.xcassets */; };
+		1870904F2060D8C300431013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1870904D2060D8C300431013 /* LaunchScreen.storyboard */; };
+		187090522060D8C300431013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187090512060D8C300431013 /* main.m */; };
+		1870905C2060D8C300431013 /* ZWCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870905B2060D8C300431013 /* ZWCalendarTests.m */; };
+		187090672060D8C300431013 /* ZWCalendarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187090662060D8C300431013 /* ZWCalendarUITests.m */; };
+		1870907A2060D9C200431013 /* ZWCalendarManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 187090792060D9C200431013 /* ZWCalendarManage.m */; };
+		1870907F2060FD0C00431013 /* ZWCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870907E2060FD0C00431013 /* ZWCalendarView.m */; };
+		187090822061064500431013 /* mainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187090812061064500431013 /* mainViewController.m */; };
+		187090852061089900431013 /* ZWDateItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187090842061089900431013 /* ZWDateItemCollectionViewCell.m */; };
+		1870908B2061169100431013 /* ZWCalendarHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870908A2061169100431013 /* ZWCalendarHeaderCollectionReusableView.m */; };
+		1870908E2061EDDF00431013 /* ZWCalendarViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870908D2061EDDF00431013 /* ZWCalendarViewModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		187090582060D8C300431013 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187090372060D8C300431013 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1870903E2060D8C300431013;
+			remoteInfo = ZWCalendar;
+		};
+		187090632060D8C300431013 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187090372060D8C300431013 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1870903E2060D8C300431013;
+			remoteInfo = ZWCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1870903F2060D8C300431013 /* ZWCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZWCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		187090422060D8C300431013 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		187090432060D8C300431013 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		187090492060D8C300431013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1870904B2060D8C300431013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1870904E2060D8C300431013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		187090502060D8C300431013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187090512060D8C300431013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		187090572060D8C300431013 /* ZWCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZWCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1870905B2060D8C300431013 /* ZWCalendarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWCalendarTests.m; sourceTree = "<group>"; };
+		1870905D2060D8C300431013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187090622060D8C300431013 /* ZWCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZWCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		187090662060D8C300431013 /* ZWCalendarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWCalendarUITests.m; sourceTree = "<group>"; };
+		187090682060D8C300431013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187090782060D9C200431013 /* ZWCalendarManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWCalendarManage.h; sourceTree = "<group>"; };
+		187090792060D9C200431013 /* ZWCalendarManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWCalendarManage.m; sourceTree = "<group>"; };
+		1870907D2060FD0C00431013 /* ZWCalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWCalendarView.h; sourceTree = "<group>"; };
+		1870907E2060FD0C00431013 /* ZWCalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWCalendarView.m; sourceTree = "<group>"; };
+		187090802061064500431013 /* mainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mainViewController.h; sourceTree = "<group>"; };
+		187090812061064500431013 /* mainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mainViewController.m; sourceTree = "<group>"; };
+		187090832061089900431013 /* ZWDateItemCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWDateItemCollectionViewCell.h; sourceTree = "<group>"; };
+		187090842061089900431013 /* ZWDateItemCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWDateItemCollectionViewCell.m; sourceTree = "<group>"; };
+		187090892061169100431013 /* ZWCalendarHeaderCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWCalendarHeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		1870908A2061169100431013 /* ZWCalendarHeaderCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWCalendarHeaderCollectionReusableView.m; sourceTree = "<group>"; };
+		1870908C2061EDDF00431013 /* ZWCalendarViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWCalendarViewModel.h; sourceTree = "<group>"; };
+		1870908D2061EDDF00431013 /* ZWCalendarViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWCalendarViewModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1870903C2060D8C300431013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187090542060D8C300431013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1870905F2060D8C300431013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		187090362060D8C300431013 = {
+			isa = PBXGroup;
+			children = (
+				187090412060D8C300431013 /* ZWCalendar */,
+				1870905A2060D8C300431013 /* ZWCalendarTests */,
+				187090652060D8C300431013 /* ZWCalendarUITests */,
+				187090402060D8C300431013 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		187090402060D8C300431013 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1870903F2060D8C300431013 /* ZWCalendar.app */,
+				187090572060D8C300431013 /* ZWCalendarTests.xctest */,
+				187090622060D8C300431013 /* ZWCalendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		187090412060D8C300431013 /* ZWCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				187090742060D8D300431013 /* ZWCalendar */,
+				187090422060D8C300431013 /* AppDelegate.h */,
+				187090432060D8C300431013 /* AppDelegate.m */,
+				187090482060D8C300431013 /* Main.storyboard */,
+				1870904B2060D8C300431013 /* Assets.xcassets */,
+				1870904D2060D8C300431013 /* LaunchScreen.storyboard */,
+				187090502060D8C300431013 /* Info.plist */,
+				187090512060D8C300431013 /* main.m */,
+				187090802061064500431013 /* mainViewController.h */,
+				187090812061064500431013 /* mainViewController.m */,
+			);
+			path = ZWCalendar;
+			sourceTree = "<group>";
+		};
+		1870905A2060D8C300431013 /* ZWCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				1870905B2060D8C300431013 /* ZWCalendarTests.m */,
+				1870905D2060D8C300431013 /* Info.plist */,
+			);
+			path = ZWCalendarTests;
+			sourceTree = "<group>";
+		};
+		187090652060D8C300431013 /* ZWCalendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				187090662060D8C300431013 /* ZWCalendarUITests.m */,
+				187090682060D8C300431013 /* Info.plist */,
+			);
+			path = ZWCalendarUITests;
+			sourceTree = "<group>";
+		};
+		187090742060D8D300431013 /* ZWCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				187090782060D9C200431013 /* ZWCalendarManage.h */,
+				187090792060D9C200431013 /* ZWCalendarManage.m */,
+				1870907D2060FD0C00431013 /* ZWCalendarView.h */,
+				1870907E2060FD0C00431013 /* ZWCalendarView.m */,
+				187090832061089900431013 /* ZWDateItemCollectionViewCell.h */,
+				187090842061089900431013 /* ZWDateItemCollectionViewCell.m */,
+				187090892061169100431013 /* ZWCalendarHeaderCollectionReusableView.h */,
+				1870908A2061169100431013 /* ZWCalendarHeaderCollectionReusableView.m */,
+				1870908C2061EDDF00431013 /* ZWCalendarViewModel.h */,
+				1870908D2061EDDF00431013 /* ZWCalendarViewModel.m */,
+			);
+			path = ZWCalendar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1870903E2060D8C300431013 /* ZWCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1870906B2060D8C300431013 /* Build configuration list for PBXNativeTarget "ZWCalendar" */;
+			buildPhases = (
+				1870903B2060D8C300431013 /* Sources */,
+				1870903C2060D8C300431013 /* Frameworks */,
+				1870903D2060D8C300431013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZWCalendar;
+			productName = ZWCalendar;
+			productReference = 1870903F2060D8C300431013 /* ZWCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		187090562060D8C300431013 /* ZWCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1870906E2060D8C300431013 /* Build configuration list for PBXNativeTarget "ZWCalendarTests" */;
+			buildPhases = (
+				187090532060D8C300431013 /* Sources */,
+				187090542060D8C300431013 /* Frameworks */,
+				187090552060D8C300431013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				187090592060D8C300431013 /* PBXTargetDependency */,
+			);
+			name = ZWCalendarTests;
+			productName = ZWCalendarTests;
+			productReference = 187090572060D8C300431013 /* ZWCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		187090612060D8C300431013 /* ZWCalendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187090712060D8C300431013 /* Build configuration list for PBXNativeTarget "ZWCalendarUITests" */;
+			buildPhases = (
+				1870905E2060D8C300431013 /* Sources */,
+				1870905F2060D8C300431013 /* Frameworks */,
+				187090602060D8C300431013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				187090642060D8C300431013 /* PBXTargetDependency */,
+			);
+			name = ZWCalendarUITests;
+			productName = ZWCalendarUITests;
+			productReference = 187090622060D8C300431013 /* ZWCalendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		187090372060D8C300431013 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = zzw;
+				TargetAttributes = {
+					1870903E2060D8C300431013 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					187090562060D8C300431013 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1870903E2060D8C300431013;
+					};
+					187090612060D8C300431013 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1870903E2060D8C300431013;
+					};
+				};
+			};
+			buildConfigurationList = 1870903A2060D8C300431013 /* Build configuration list for PBXProject "ZWCalendar" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 187090362060D8C300431013;
+			productRefGroup = 187090402060D8C300431013 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1870903E2060D8C300431013 /* ZWCalendar */,
+				187090562060D8C300431013 /* ZWCalendarTests */,
+				187090612060D8C300431013 /* ZWCalendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1870903D2060D8C300431013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1870904F2060D8C300431013 /* LaunchScreen.storyboard in Resources */,
+				1870904C2060D8C300431013 /* Assets.xcassets in Resources */,
+				1870904A2060D8C300431013 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187090552060D8C300431013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187090602060D8C300431013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1870903B2060D8C300431013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1870907A2060D9C200431013 /* ZWCalendarManage.m in Sources */,
+				1870908B2061169100431013 /* ZWCalendarHeaderCollectionReusableView.m in Sources */,
+				187090522060D8C300431013 /* main.m in Sources */,
+				187090822061064500431013 /* mainViewController.m in Sources */,
+				1870907F2060FD0C00431013 /* ZWCalendarView.m in Sources */,
+				187090852061089900431013 /* ZWDateItemCollectionViewCell.m in Sources */,
+				1870908E2061EDDF00431013 /* ZWCalendarViewModel.m in Sources */,
+				187090442060D8C300431013 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		187090532060D8C300431013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1870905C2060D8C300431013 /* ZWCalendarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1870905E2060D8C300431013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187090672060D8C300431013 /* ZWCalendarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		187090592060D8C300431013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1870903E2060D8C300431013 /* ZWCalendar */;
+			targetProxy = 187090582060D8C300431013 /* PBXContainerItemProxy */;
+		};
+		187090642060D8C300431013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1870903E2060D8C300431013 /* ZWCalendar */;
+			targetProxy = 187090632060D8C300431013 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		187090482060D8C300431013 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				187090492060D8C300431013 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1870904D2060D8C300431013 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1870904E2060D8C300431013 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		187090692060D8C300431013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1870906A2060D8C300431013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1870906C2060D8C300431013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2RDTZE3L65;
+				INFOPLIST_FILE = ZWCalendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guwendate.ZWCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1870906D2060D8C300431013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2RDTZE3L65;
+				INFOPLIST_FILE = ZWCalendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guwendate.ZWCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1870906F2060D8C300431013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2RDTZE3L65;
+				INFOPLIST_FILE = ZWCalendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guwendate.ZWCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZWCalendar.app/ZWCalendar";
+			};
+			name = Debug;
+		};
+		187090702060D8C300431013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2RDTZE3L65;
+				INFOPLIST_FILE = ZWCalendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guwendate.ZWCalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZWCalendar.app/ZWCalendar";
+			};
+			name = Release;
+		};
+		187090722060D8C300431013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2RDTZE3L65;
+				INFOPLIST_FILE = ZWCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guwendate.ZWCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZWCalendar;
+			};
+			name = Debug;
+		};
+		187090732060D8C300431013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2RDTZE3L65;
+				INFOPLIST_FILE = ZWCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guwendate.ZWCalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZWCalendar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1870903A2060D8C300431013 /* Build configuration list for PBXProject "ZWCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187090692060D8C300431013 /* Debug */,
+				1870906A2060D8C300431013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1870906B2060D8C300431013 /* Build configuration list for PBXNativeTarget "ZWCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1870906C2060D8C300431013 /* Debug */,
+				1870906D2060D8C300431013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1870906E2060D8C300431013 /* Build configuration list for PBXNativeTarget "ZWCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1870906F2060D8C300431013 /* Debug */,
+				187090702060D8C300431013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187090712060D8C300431013 /* Build configuration list for PBXNativeTarget "ZWCalendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187090722060D8C300431013 /* Debug */,
+				187090732060D8C300431013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 187090372060D8C300431013 /* Project object */;
+}
