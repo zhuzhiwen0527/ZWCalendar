@@ -57,7 +57,6 @@
         
         UICollectionViewFlowLayout * layout = [[UICollectionViewFlowLayout alloc] init];
         layout.sectionHeadersPinToVisibleBounds= YES;
-  
         layout.sectionInset = UIEdgeInsetsMake(0,0, 0, 0);
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 20, self.frame.size.width, self.frame.size.height-20) collectionViewLayout:layout];
         _collectionView.dataSource = self;

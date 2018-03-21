@@ -13,6 +13,20 @@
 @property (strong, nonatomic) NSString * chineseMonth;
 @property (nonatomic, strong) NSDate * baseDate;
 @property (copy, nonatomic) NSArray * weekList;
+
+@property (strong, nonatomic,readwrite) NSMutableArray * calendarDate;// 公历
+@property (strong, nonatomic,readwrite) NSMutableArray * chineseCalendarDate;// 农历日期&节日&节气
+@property (strong, nonatomic,readwrite) NSMutableArray * chineseCalendarDay;// 农历纯日期(不包含节日和节气)
+@property (strong, nonatomic,readwrite) NSMutableArray * chineseCalendarMonth;// 农历月份
+
+@property (assign, nonatomic) NSUInteger days;// 本月天数
+@property (assign, nonatomic) NSInteger todayInMonth;// 今天在本月是第几天
+@property (assign, nonatomic) NSUInteger dayInWeek;// 本月第一天是周几, 1为周日，以此类推
+@property (assign, nonatomic) NSUInteger year;// 当前年
+@property (assign, nonatomic) NSUInteger month;// 当前月
+@property (assign, nonatomic) NSUInteger theMonth;// 本月
+@property (assign, nonatomic) NSString * chineseYear;// 农历年
+@property (assign, nonatomic) NSUInteger todayPosition;// 今天在所属月份中所处位置
 @end
 @implementation ZWCalendarManage
 
@@ -112,33 +126,37 @@
 #pragma mark - 创建日历数组
 - (void)creatcalendarArrayWithDate:(NSDate *)date
 {
-    self.calendarDate = [NSMutableArray new];
-    self.chineseCalendarDate = [NSMutableArray new];
-    self.chineseCalendarDay = [NSMutableArray new];
-    self.chineseCalendarMonth = [NSMutableArray new];
+    NSMutableArray * calendarDate = [NSMutableArray new];
+    NSMutableArray * chineseCalendarDate = [NSMutableArray new];
+    NSMutableArray * chineseCalendarDay = [NSMutableArray new];
+    NSMutableArray * chineseCalendarMonth = [NSMutableArray new];
     for (NSInteger j = 0; j < self.dayInWeek-1; j ++) {// 创建空占位数组
-        [self.calendarDate addObject:@""];
-        [self.chineseCalendarDate addObject:@""];
-        [self.chineseCalendarDay addObject:@""];
-        [self.chineseCalendarMonth addObject:@""];
+        [calendarDate addObject:@""];
+        [chineseCalendarDate addObject:@""];
+        [chineseCalendarDay addObject:@""];
+        [chineseCalendarMonth addObject:@""];
     }
     
     for (NSInteger i = 0; i < self.days; i++) {
-        [self.calendarDate addObject:@(i+1)];
+        [calendarDate addObject:@(i+1)];
         NSDate * d= [date dateByAddingTimeInterval:i*24*60*60];
         NSString * chineseDay = [self calculationChinaCalendarWithDate:d dispalyHoliday:YES];
-        [self.chineseCalendarDate addObject: chineseDay];// 替换农历日期
+        [chineseCalendarDate addObject: chineseDay];// 替换农历日期
         NSString * noHoliday = [self calculationChinaCalendarWithDate:d dispalyHoliday:NO];
-        [self.chineseCalendarDay addObject:noHoliday];
-        [self.chineseCalendarMonth addObject: self.chineseMonth];
+        [chineseCalendarDay addObject:noHoliday];
+        [chineseCalendarMonth addObject: self.chineseMonth];
     }
     NSInteger k =  (self.dayInWeek - 1 + self.days) % 7 == 0 ? 0:(7-(self.dayInWeek - 1 + self.days) % 7);
     for (NSInteger h = 0; h < k; h++) {
-        [self.calendarDate addObject:@""];
-        [self.chineseCalendarDate addObject:@""];
-        [self.chineseCalendarDay addObject:@""];
-        [self.chineseCalendarMonth addObject:@""];
+        [calendarDate addObject:@""];
+        [chineseCalendarDate addObject:@""];
+        [chineseCalendarDay addObject:@""];
+        [chineseCalendarMonth addObject:@""];
     }
+    self.calendarDate = calendarDate;
+    self.chineseCalendarDate = chineseCalendarDate;
+    self.chineseCalendarDay = chineseCalendarDay;
+    self.chineseCalendarMonth = chineseCalendarMonth;
 }
 
 #pragma mark - 获取周
